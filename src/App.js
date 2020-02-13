@@ -4,9 +4,8 @@ import './App.css';
 
 import Header from './Header';
 import Footer from './Footer';
-import MarketSchedule from './MarketSchedule';
-import CropSchedule from './CropSchedule';
-import Bio from './Bio';
+import Home from './Home';
+import AboutUs from './AboutUs';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -18,9 +17,8 @@ function App() {
       <Header/>
 
       <Switch>
-        <Route exact path='/' component={Bio} />
-        <Route path='/cropschedule' component={CropSchedule} />
-        <Route path='/marketschedule' component={MarketSchedule} />
+        <Route exact path='/' component={Home} />
+        <Route path='/aboutus' component={AboutUs} />
       </Switch>
 
       <div className="footer">

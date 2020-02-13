@@ -14,8 +14,8 @@ function Header(){
   return (
 
     <div className="">
-      <h1 className="mainH1">Avery's Inorganics</h1>
-      <h3 className="mainH3"><Link to="/">Home</Link> | <Link to="/cropschedule">Crop Schedule</Link> | <Link to="/marketschedule">Market Schedule</Link></h3>
+      <h1 className="mainH1">An Agency</h1>
+      <h3 className="mainH3"><Link to="/">Home</Link> | <Link to="/AboutUs">About Us</Link></h3>
       <div className="mainHeader">
 
         <style jsx>{`
@@ -24,7 +24,9 @@ function Header(){
         background-image: url(${imageArray[imageNumber]});
         // opacity: 1;
         // transition: opacity 1000ms;
-        border-radius: 25px;
+        // border-radius: 25px;
+        border-bottom-left-radius:  25%;
+        border-bottom-right-radius: 25%;
         height: 15vh;
         background-size: cover;
         margin-top: -7px;

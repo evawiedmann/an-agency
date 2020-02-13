@@ -7,7 +7,7 @@ import React from 'react';
 
 function Footer(){
 
-  let imageArray = ['(111, 222, 222, .5)', '(222, 111, 222, .5)', '(222, 222, 111, .5)', '(111, 222, 111, .5)'];
+  let imageArray = ['(111, 222, 222, .25)', '(222, 111, 222, .25)', '(222, 222, 111, .25)', '(111, 222, 111, .25)'];
 
   let imageNumber = (Math.round(Math.random()*3));
 
@@ -21,7 +21,8 @@ function Footer(){
       .mainFooter {
         z-index: 9;
         background-color: rgba${imageArray[imageNumber]};
-        border-radius: 25px;
+        border-top-left-radius:  25%;
+        border-top-right-radius: 25%;
         background-size: cover;
 
         position: fixed;
