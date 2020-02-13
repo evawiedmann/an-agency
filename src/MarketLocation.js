@@ -14,8 +14,8 @@ function MarketLocation(props){
       <style jsx>{`
       .locationText {
         font-family: fantasy;
-        color: #800303;
         line-height: 10px;
+        color: red;
       }
       .locationBox{
         border-bottom: 1px solid lightgray;

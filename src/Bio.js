@@ -1,4 +1,7 @@
 import React from 'react';
+import './App.css';
+
+
 
 function Bio(){
   return (
@@ -8,16 +11,16 @@ function Bio(){
       <p className='bioText'>Who are we? Well, we seek out the finest natural and organic foods available, maintain the strictest quality standards in the industry, and have an unshakeable commitment to sustainable agriculture. Add to that the excitement and fun we bring to shopping for groceries, and you start to get a sense of what we’re all about. Oh yeah, we’re a mission-driven company too.</p>
       <style jsx>{`
       .bioClass {
-        position: absolute;
-        left: 25%;
-        top: 15vh;
-        width: 50%;
         background-color: rgba(166, 250, 118, .3);
         border-radius: 25px;
-        height: 1000px;
         overflow: auto;
+        animation: div_animation_effect 2s 1;
+      }
 
-
+      @keyframes div_animation_effect {
+              0%   { opacity: 0;  left:2000px}
+              40%   { opacity: 1; left:1%}
+              100% { opacity: 1;}
       }
 
       .bioHeader{
@@ -29,11 +32,16 @@ function Bio(){
       .bioText{
         text-align: center;
         color: #ab3333;
-
         padding: 20px;
+
       }
 
       `}</style>
+
+
+
+
+
     </div>
   );
 }

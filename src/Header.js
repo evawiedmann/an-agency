@@ -14,11 +14,11 @@ function Header(){
   return (
 
     <div className="">
-    <h1 className="mainH1">Avery's Inorganics</h1>
-    <h3 className="mainH3"><Link to="/">Home</Link> | <Link to="/cropschedule">Crop Schedule</Link> | <Link to="/marketschedule">Market Schedule</Link></h3>
-    <div className="mainHeader">
+      <h1 className="mainH1">Avery's Inorganics</h1>
+      <h3 className="mainH3"><Link to="/">Home</Link> | <Link to="/cropschedule">Crop Schedule</Link> | <Link to="/marketschedule">Market Schedule</Link></h3>
+      <div className="mainHeader">
 
-    <style jsx>{`
+        <style jsx>{`
       .mainHeader {
         z-index: 0;
         background-image: url(${imageArray[imageNumber]});
@@ -33,7 +33,7 @@ function Header(){
 
       @keyframes header_fade_effect {
         0%   { opacity: 0; }
-        1%   { opacity: 1; }
+        5%   { opacity: 1; }
         100% { opacity: 1; }
       }
 
@@ -60,10 +60,10 @@ function Header(){
 
       `}</style>
       </div>
-      </div>
+    </div>
 
-    );
-  }
+  );
+}
 
 
 

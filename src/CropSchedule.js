@@ -1,5 +1,10 @@
 import React from 'react';
 import CropList from './CropList';
+import './App.css';
+
+
+
+
 const availableProduce = [
   {
     month: 'January',
@@ -283,14 +288,17 @@ function CropSchedule(){
       <style jsx>{`
 
       .cropClass {
-        position: absolute;
-        left: 25%;
-        top: 15vh;
-        width: 50%;
+
         background-color: rgba(166, 250, 118, .3);
         border-radius: 25px;
-        height: 1000px;
         overflow: auto;
+        animation: div_animation_effect 2s 1;
+      }
+
+      @keyframes div_animation_effect {
+              0%   { opacity: 0;  left:2000px}
+              40%   { opacity: 1; left:1%}
+              100% { opacity: 1;}
       }
 
       .cropScheduleHeader{
@@ -299,6 +307,10 @@ function CropSchedule(){
         border-bottom: 1px solid lightgrey;
       }
       `}</style>
+
+
+
+
     </div>
   );
 }

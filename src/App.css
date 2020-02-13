@@ -1,3 +1,16 @@
+.bioClass, .marketClass, .cropClass {
+  position: fixed;
+  left: 5%;
+  top: 15vh;
+  width: 65%;
+  height: 80vh;
+}
+
+
+body {
+  color: blue;
+}
+
 .App {
   text-align: center;
 }
