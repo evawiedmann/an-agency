@@ -7,7 +7,7 @@ import React from 'react';
 
 function Footer(){
 
-  let imageArray = ['(111, 222, 222, .25)', '(222, 111, 222, .25)', '(222, 222, 111, .25)', '(111, 222, 111, .25)'];
+  let imageArray = ['(99, 99, 88, .25)', '(99, 88, 99, .25)', '(88, 99, 99, .25)', '(99, 99, 99, .25)'];
 
   let imageNumber = (Math.round(Math.random()*3));
 
@@ -15,7 +15,7 @@ function Footer(){
   return (
 
     <div className="mainFooter">
-      <h1 className="">Rainbow footer!</h1>
+      <h1 className=""></h1>
 
       <style jsx>{`
       .mainFooter {

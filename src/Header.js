@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Header(){
 
-  let imageArray = ['https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg', 'https://en.muddyboots.com/js/tinymce/jscripts/tiny_mce/plugins/imagemanager/files/fresh-produce_aus.jpg', 'https://keanyproduce.com/wp-content/uploads/2016/10/hero-press-inquiries.jpg', 'https://www.chewboom.com/wp-content/uploads/2019/12/New-Nachos-Party-Pack-Coming-To-Taco-Bell-On-December-26-2019-678x381.jpg'];
+  let imageArray = ['(99, 99, 88, .25)', '(99, 88, 99, .25)', '(88, 99, 99, .25)', '(99, 99, 99, .25)'];
 
   let imageNumber = (Math.round(Math.random()*3));
 
@@ -21,7 +21,7 @@ function Header(){
         <style jsx>{`
       .mainHeader {
         z-index: 0;
-        background-image: url(${imageArray[imageNumber]});
+        background-color: rgba${imageArray[imageNumber]};
         // opacity: 1;
         // transition: opacity 1000ms;
         // border-radius: 25px;
@@ -44,7 +44,8 @@ function Header(){
         color: blue;
         position: absolute;
         top: 0px;
-        left: 20px;
+        left: 5%;
+        width: 90%;
         background: rgba(255, 255, 255, .5);
         padding: 15px;
         border-radius: 25px;
@@ -54,7 +55,8 @@ function Header(){
         color: blue;
         position: absolute;
         top: 80px;
-        left: 20px;
+        left: 5%;
+        width: 45%;
         background: rgba(255, 255, 255, .5);
         padding: 15px;
         border-radius: 25px;

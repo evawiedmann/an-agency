@@ -11,9 +11,9 @@ function BioPic(){
   return (
     <div className='BioPicClass'>
     <h2 className='BioPicName'>Gary</h2>
-  
-    <img  className='BioPicPicture'src={pictures[index]}/>
 
+    <div id='bioPic' className='BioPicPicture'>
+    </div>
 
       <style jsx>{`
       .BioPicClass {
@@ -21,9 +21,13 @@ function BioPic(){
         border-radius: 25px;
         overflow: auto;
         animation: div_animation_effect 2s 1;
+        background-position: center;
+
       }
+
       .BioPicPicture {
-        border-radius: 25px;
+        height: 400px;
+        width: 400px;
       }
 
       @keyframes div_animation_effect {
