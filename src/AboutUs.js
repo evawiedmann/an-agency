@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import BioPic from './BioPic';
 
 import Gary from './gary.jpg';
 import Muggy from './muggy.jpg';
@@ -14,6 +13,7 @@ function AboutUs(){
   function mouseIn0() {
     let idOfThing = document.getElementById('0');
     idOfThing.style.color = "red";
+    idOfThing.classList.add("hoverClass");
 
     let test = document.querySelector(".bioPic");
     test.style.backgroundImage = `url(${Gary})`;
@@ -21,13 +21,16 @@ function AboutUs(){
 
   function mouseOut0() {
     let idOfThing = document.getElementById('0');
-    idOfThing.style.color = "green";
+    idOfThing.classList.remove("hoverClass");
+
+    idOfThing.style.color = "blue";
   }
 
 
   function mouseIn1() {
     let idOfThing = document.getElementById('1');
     idOfThing.style.color = "red";
+    idOfThing.classList.add("hoverClass");
 
     let test = document.querySelector(".bioPic");
     test.style.backgroundImage = `url(${Muggy})`;
@@ -35,11 +38,14 @@ function AboutUs(){
 
   function mouseOut1() {
     let idOfThing = document.getElementById('1');
-    idOfThing.style.color = "green";  }
+    idOfThing.style.color = "blue";
+    idOfThing.classList.remove("hoverClass");
+  }
 
   function mouseIn2() {
     let idOfThing = document.getElementById('2');
     idOfThing.style.color = "red";
+    idOfThing.classList.add("hoverClass");
 
     let test = document.querySelector(".bioPic");
     test.style.backgroundImage = `url(${Uncanny})`;
@@ -47,7 +53,8 @@ function AboutUs(){
 
   function mouseOut2() {
     let idOfThing = document.getElementById('2');
-    idOfThing.style.color = "green";
+    idOfThing.style.color = "blue";
+    idOfThing.classList.remove("hoverClass");
   }
 
 
@@ -77,6 +84,15 @@ function AboutUs(){
 
       .bioLinks {
         float: right;
+      }
+
+      .bioLI {
+        text-align: right;
+        padding-right: 200px;
+        list-style: none;
+        color: blue;
+        text-decoration: underline;
+
 
       }
 
@@ -91,7 +107,8 @@ function AboutUs(){
         width: 50%;
         border-radius: 100%;
         overflow: hidden;
-        height: 50%;
+        height: 60%;
+        background-position: center;
         background-size: cover;
       }
 
@@ -99,6 +116,17 @@ function AboutUs(){
         0%   { opacity: 0;  left:2000px}
         40%   { opacity: 1; left:1%}
         100% { opacity: 1;}
+      }
+
+
+      .hoverClass {
+        background-color: rgba(166, 250, 218, .1);
+        animation: div_hover_effect 1s 1;
+      }
+
+      @keyframes div_hover_effect {
+        from {transform: rotateY(0deg);}
+        to {transform: rotateY(270deg);}
       }
 
       .aboutHeader{
